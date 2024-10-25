@@ -1,0 +1,24 @@
+.home{
+    color: black;
+    animation: fadeIn 2s;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    background-image: url('../Images/shoppingbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    opacity: 0.89;
+  }
+
+  p {
+    text-align: center;
+    font-size: 32px; 
+    color: aliceblue;
+  }
+/*   
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  } */
+  
