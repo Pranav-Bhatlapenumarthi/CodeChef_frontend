@@ -1,21 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ProductList.css';
 
-// const Products = () => {
-//   return (
-//     <div className="products-container">
-//       <div className="content-container">
-//         <h1>EComm</h1>
-//         <p>this is a dummy paragraph</p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// Importing necessary libraries and components
-
-
-// Defining the Product component
 function Products() {
   const [products, setProducts] = useState([]);
 
@@ -27,21 +12,24 @@ function Products() {
   }, []);
 
   return (
+    
     <div className="product">
       <div className='product-container'>
       {products.map(product => (
         <div className="content-container">
           <h4>{product.title}</h4>
+          <h7>{product.description}</h7>
           <hr></hr>
           <div className='button'>
-            <button type="button" class="btn btn-dark">Know more</button>
-            <button type="button" class="btn btn-dark">Add to Cart</button>
+            <div className='cart'>
+              <button type="button" class="btn btn-dark">Add to Cart</button>
+            </div>
           </div>
-          {/* <p class="card-text">{product.description}</p> */}
         </div>
       ))}
       </div>
     </div>
+    
   );
 }
 export default Products

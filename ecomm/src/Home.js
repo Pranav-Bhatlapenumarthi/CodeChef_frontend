@@ -15,7 +15,7 @@ function Home(){
               Products
             </b>
           </button>
-          <button button type="button" class="btn btn-outline-warning"><b>Go to Cart</b></button>
+          <button button type="button" class="btn btn-outline-warning" onClick={() => document.getElementById('cart').scrollIntoView({ behavior: 'smooth' })}><b>Go to Cart</b></button>
         </nav>      
       </header>
     </div>

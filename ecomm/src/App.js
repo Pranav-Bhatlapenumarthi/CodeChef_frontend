@@ -1,7 +1,7 @@
-// import logo from './logo.svg';
 import './App.css';
 import Home from './Home.js'
 import Product from './ProductList.js'
+import Cart from './Cart.js';
 
 function App() {
   return (
@@ -12,6 +12,9 @@ function App() {
         </section>
         <section id="product">
           <Product />
+        </section>
+        <section id="cart">
+          <Cart />
         </section>
       </main>
     </div>
