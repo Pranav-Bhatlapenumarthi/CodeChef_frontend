@@ -5,30 +5,28 @@
     /*border-radius: 8px;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    background-color: rgb(57, 54, 54);;
   }
- 
 
-  
   .content-container {
-    max-width: 1000px;
-    width:50%;
+    min-width: 500px;
+    min-height: 350px;
+    width:20%;
     padding: 30px;
     background-color:burlywood;
     color:black;
     border-radius: 18px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
-    float:inline-start;
+    float:left;
   }
   
-  h2 {
-    font-size: 64px; 
-    margin-bottom: 20px;
-    margin-top: 0; 
+  .button {
+    padding-top: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

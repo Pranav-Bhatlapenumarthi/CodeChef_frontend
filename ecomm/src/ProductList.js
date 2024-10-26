@@ -31,17 +31,13 @@ function Products() {
       <div className='product-container'>
       {products.map(product => (
         <div className="content-container">
-        {/* //  <h2>{product.title}</h2>
-        //   <p>{product.description}</p>
-        //   <button>Add to cart</button>
-
-        // </div> */}
-          <div class="card-body">
-            <h4>{product.title}</h4>
-              <button type="button" class="btn btn-dark">Click to know more</button>
-              <button type="button" class="btn btn-dark">Add to Cart</button>
-            {/* <p class="card-text">{product.description}</p> */}
+          <h4>{product.title}</h4>
+          <hr></hr>
+          <div className='button'>
+            <button type="button" class="btn btn-dark">Know more</button>
+            <button type="button" class="btn btn-dark">Add to Cart</button>
           </div>
+          {/* <p class="card-text">{product.description}</p> */}
         </div>
       ))}
       </div>
