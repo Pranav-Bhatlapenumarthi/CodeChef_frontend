@@ -19,6 +19,9 @@ function Products() {
         <div className="content-container">
           <h4>{product.title}</h4>
           <h7>{product.description}</h7>
+          <br></br>
+          <br></br>
+          <img src={product.image} alt="alt tag" width="200"></img>
           <hr></hr>
           <div className='button'>
             <div className='cart'>
